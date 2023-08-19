@@ -8,7 +8,7 @@ import java.io.*;
 public class FileReaderWriterExampleWithTryWithResources {
     public static void main(String[] args) throws IOException {
 
-        try(Reader fileReader = new FileReader("C:\\Users\\vikra\\IdeaProjects\\java-io-concepts-2\\character-streaming\\src\\input.txt");){
+        try(Reader fileReader = new FileReader("E:\\JavaDevelopment\\java-io-concepts\\character-streaming\\src\\input.txt");){
             System.out.println(fileReader.ready());
 
             int size = 100;
@@ -18,7 +18,7 @@ public class FileReaderWriterExampleWithTryWithResources {
 
             System.out.println(charsFromFile);//print on the console
 
-            try(Writer fileWriter = new FileWriter("C:\\Users\\vikra\\IdeaProjects\\java-io-concepts-2\\character-streaming\\src\\output.txt");
+            try(Writer fileWriter = new FileWriter("E:\\JavaDevelopment\\java-io-concepts\\character-streaming\\src\\output.txt");
             ){
                 fileWriter.write(charsFromFile);
             }catch (IOException ioException){
