@@ -36,5 +36,6 @@ public class ByteArrayInputOutputStreamExample {
         } catch (IOException ioException) {
             ioException.printStackTrace();
         }
+        System.out.println("Testing..");
     }
 }
